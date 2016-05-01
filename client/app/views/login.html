@@ -1,0 +1,29 @@
+﻿<link rel="stylesheet" href="css/login.css" />
+<section>
+    <div class="row"> 
+        <h2 data-bind="text:displayName"/> 
+    </div>
+    <hr>
+    <div class="row"> 
+        <div class="col-md-2"/>
+        <div class="col-md-8">
+            <input type="text" placeholder="User Name" data-bind="value: username, valueUpdate: 'afterkeydown'"><br>
+        </div>
+        <div class="col-md-2"/>
+    </div>
+    <div class="row"> 
+        <div class="col-md-2"/>
+        <div class="col-md-8">
+            <input type="text" placeholder="Password" data-bind="value: password, valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-2"/>
+    </div>
+    <div class="row"> 
+        <div class="col-md-5"/>
+        <div class="col-md-2">
+            <button data-bind="click: login">Sign in</button>
+        </div>
+        <div class="col-md-5"/>
+    </div>
+
+</section>

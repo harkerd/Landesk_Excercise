@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" href="css/data_access.css" />
+<section>
+    <div class="row">
+        <h2 data-bind="text: displayName"/>
+        <hr>
+    </div>
+
+    <div class="row">
+        <table>
+            <tr data-bind="foreach: column_names">
+               <th data-bind="text: $data"/>
+            </tr> 
+            <tbody data-bind="foreach: row_data">
+                <tr data-bind="foreach: $data">
+                    <td data-bind="text: $data"/>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</section>
